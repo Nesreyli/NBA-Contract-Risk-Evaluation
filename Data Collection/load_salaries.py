@@ -31,5 +31,5 @@ def load_salaries(file_path: str) -> pd.DataFrame:
     return df
 
 if __name__ == "__main__":
-    df = load_salaries(r"C:\Users\#User\NBA_Risk_Model\Data\salaries.csv")
+    df = load_salaries("Data/salaries.csv")
     print(df.head())

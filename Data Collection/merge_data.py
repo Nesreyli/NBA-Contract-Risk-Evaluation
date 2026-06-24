@@ -8,11 +8,11 @@ def merge_data(salary_df: pd.DataFrame, stats_df: pd.DataFrame) -> pd.DataFrame:
 
 if __name__ == "__main__":
 
-    salary_df = pd.read_csv( r"C:\Users\rajic\NBA_Risk_Model\Data\salaries.csv", sep="\t", encoding="utf-8")
+    salary_df = pd.read_csv("Data\salaries.csv", sep="\t", encoding="utf-8")
     salary_df = salary_df.drop(columns=["Rk"])
-    stats_df = pd.read_csv(r"C:\Users\rajic\NBA_Risk_Model\Data\nba_stats.csv")
+    stats_df = pd.read_csv("Data\Stats_NBA.csv")
 
     merged_df = merge_data(salary_df, stats_df)
-    merged_df.to_csv(r"C:\Users\#User\NBA_Risk_Model\Data\processed_data.csv", index=False)
+    merged_df.to_csv("Data/processed_data.csv", index=False)
 
     print(merged_df.head())

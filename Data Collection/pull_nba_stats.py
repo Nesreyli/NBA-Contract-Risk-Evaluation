@@ -43,9 +43,6 @@ if __name__ == "__main__":
 
     stats_df = pull_player_stats()
 
-    stats_df.to_csv(r"C:\Users\#User\NBA_Risk_Model\Data\nba_stats.csv",
-        index=False,
-        encoding="utf-8-sig"
-    )
+    stats_df.to_csv("Data\Stats_NBA.csv", index=False, encoding="utf-8-sig")
 
     print(stats_df.head())
