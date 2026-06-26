@@ -6,7 +6,7 @@ def run_monte_carlo(df, n_sims = 10_000, seed=42):
     residual_std = (df["PredictedMarketSalary"] - df["2025-26"]).std()
     results = []
 
-    for _, row in df.iterrows():   # row is defined here
+    for _, row in df.iterrows():  
         age = row["Age"]
         # Higher Upside on Younger      
         if age < 25:
