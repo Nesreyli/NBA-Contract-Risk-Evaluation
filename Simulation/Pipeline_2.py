@@ -10,3 +10,8 @@ cols_to_merge = ["Player", "ValueScore", "ValuePerMillion"]
 player_risk = player_risk.merge(df[cols_to_merge], on="Player", how="left")
 
 player_risk.to_csv("data/player_risk.csv", index=False)
+
+team_risk = aggreagte_team_risk(player_risk)
+team_risk.to_csv("data/team_risk.csv", index=False)
+
+print("Done")
