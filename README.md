@@ -68,6 +68,17 @@ NBA-Contract-Risk-Evaluation/
 ├── Visualization
 │   └── Model_Evaluation         # Chart Outputs of Data 
 ```
+---
+## Tech Stack
+| Tool | Purpose |
+|------|---------|
+| Python 3.10+ | Core language |
+| nba_api | Official NBA data |
+| Basketball Reference | Salaries of Players
+| pandas | Data manipulation |
+| scikit-learn | ML models, evaluation |
+| matplotlib / seaborn | Visualizations |
+| Numpy | Monte Carlo Simulation | 
 
 ---
 
