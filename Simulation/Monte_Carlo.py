@@ -6,7 +6,7 @@ def run_monte_carlo(df, n_sims = 10_000, seed=42):
     residual_std = (df["PredictedMarketSalary"] - df["2025-26"]).std()
     results = []
 
-    for _, row in df.iterrows():   # row is defined here
+    for _, row in df.iterrows():
         age = row["Age"]
         # Higher Upside on Younger      
         if age < 25:
@@ -21,7 +21,7 @@ def run_monte_carlo(df, n_sims = 10_000, seed=42):
         else:
             age_factor = 1.35
 
-        # Fewer Games played presents Uncertanity in Health 
+        # Fewer Games played presents Uncertanity in Health with Small Adjustment 
         gp_factor = 1 + (1 - row["GP"] / 82) * 0.3
         std_i = residual_std * age_factor * gp_factor
 

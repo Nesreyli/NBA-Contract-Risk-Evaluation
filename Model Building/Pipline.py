@@ -2,7 +2,7 @@ import pandas as pd
 
 from Value_Score import create_value_score
 from Cost_Features import cost_feature
-from Market_Value_Model import fit_market_model
+from Market_Value import fit_market_model
 from Contract_Surplus import calculate_contract_suprlus
 
 df = pd.read_csv("data/processed_data.csv")
