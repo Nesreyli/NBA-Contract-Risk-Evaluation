@@ -80,7 +80,7 @@ sns.heatmap(
 ax.set_title("Team Risk Heatmap")
 ax.set_xlabel("")
 plt.tight_layout()
-plt.savefig("Visuals/team_heatmap.png", dpi=150)
+plt.savefig("Images/team_heatmap.png", dpi=150)
 plt.close()
 
 # Team surplus bar chart (normalized by player count) 
