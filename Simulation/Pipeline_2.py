@@ -1,5 +1,5 @@
 import pandas as pd
-from Monte_Carlo import run_monte_carlo       
+from Monte_Carlo import run_monte_carlo 
 from Risk_Aggregator import aggreagte_team_risk
 
 df = pd.read_csv("data/model_data.csv")

@@ -1,5 +1,3 @@
-# src/data/create_processed_data.py
-
 import pandas as pd
 
 from load_salaries import load_salaries
@@ -10,7 +8,7 @@ from merge_data import merge_data
 def create_processed_data():
 
     # Loading Found Data 
-    salary_df = load_salaries( "data/salaries.csv")
+    salary_df = load_salaries("data/salaries.csv")
     stats_df = pull_player_stats()
     merged_df = merge_data(salary_df, stats_df)
 
